@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Packages</title>
+    <style>
+        /* Reset some default styles */
+        body, h1, h2, p, footer {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #6d5b97, #8d58bf);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Main content */
+        main {
+            flex: 1;
+            padding: 40px 20px;
+        }
+
+        /* Description section */
+        .description {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        /* Packages section */
+        .packages {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .package {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            width: 300px;
+            transition: transform 0.3s ease;
+        }
+
+        .package:hover {
+            transform: translateY(-10px);
+        }
+
+        .package h2 {
+            background-color: #6d5b97;
+            color: white;
+            margin: 0;
+            padding: 15px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .package p {
+            padding: 20px;
+            color: #666;
+        }
+
+        /* Download button */
+        .download-btn {
+            background-color: #6d5b97;
+            border: none;
+            border-radius: 0 0 10px 10px;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            padding: 15px 0;
+            width: 100%;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .download-btn:hover {
+            background-color: #8d58bf;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Download Packages</h1>
+    </header>
+    <main>
+        <section class="description">
+            <p>Welcome to our download page. Here you can find various packages available for download. Please choose the package that suits your needs and click the download button.</p>
+        </section>
+        <section class="packages">
+            <div class="package">
+                <h2>Package 1</h2>
+                <p>Background</p>
+                <a href="" download="bg.zip" class="download-btn">Download</a>
+            </div>
+            <div class="package">
+                <h2>Package 2</h2>
+                <p>soon...</p>
+                <a href="path/to/package2.zip" download="package2.zip" class="download-btn">Download</a>
+            </div>
+            <div class="package">
+                <h2>Package 3</h2>
+                <p>soon...</p>
+                <a href="path/to/package3.zip" download="package3.zip" class="download-btn">Download</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>
